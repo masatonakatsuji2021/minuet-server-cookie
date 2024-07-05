@@ -1,0 +1,29 @@
+{
+  "name": "minuet-server-cookie",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masatonakatsuji2021/minuet-server-cookie.git"
+  },
+  "keywords": [
+    "server",
+    "cookie",
+    "node",
+    "http-proxy",
+    "js-yaml"
+  ],
+  "author": "Masato Nakatsuji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/masatonakatsuji2021/minuet-server-cookie/issues"
+  },
+  "homepage": "https://github.com/masatonakatsuji2021/minuet-server-cookie#readme",
+  "dependencies": {
+    "@types/node": "^20.12.12",
+    "minuet-server": "git+https://github.com/masatonakatsuji2021/minuet-server.git"
+  }
+}
