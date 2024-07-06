@@ -60,9 +60,17 @@ export class MinuetCookie {
 
     /**
      * ***get***
+     * @returns 
+     */
+    public get() : {[name : string] : string};
+    
+    /**
+     * ***get***
      * @param {string?} name 
      * @returns 
      */
+    public get(name : string) : string;
+
     public get(name? : string) : string | {[name : string] : string} {
         if (name){
             if (this.cookies[name]) {
@@ -78,9 +86,19 @@ export class MinuetCookie {
      * ***set***
      * @param {string} name 
      * @param {string | number | boolean} value 
+     * @returns 
+     */
+    public set(name : string, value : string | number | boolean) : MinuetCookie;
+
+    /**
+     * ***set***
+     * @param {string} name 
+     * @param {string | number | boolean} value 
      * @param {MinuetCookieSetOption} option 
      * @returns 
      */
+    public set(name : string, value : string | number | boolean, option?: MinuetCookieSetOption) : MinuetCookie;
+
     public set(name : string, value : string | number | boolean, option?: MinuetCookieSetOption) : MinuetCookie {
         if (typeof value != "string") value = value.toString();
         this.cookies[name] = value;
